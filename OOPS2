@@ -1,12 +1,13 @@
+//Code to calculate area and perimeter of a rectangle using OOPS concept
 #include<iostream>
 using namespace std;
 class Student{
-float length;
-float width;
+    float length;
+    float width;
 public:
 void inputDimensions(){
-cout<<"Enter Length of Rectangle , Width of Rectangle"<<endl;
-cin>>length>>width;
+    cout<<"Enter Length of Rectangle , Width of Rectangle"<<endl;
+    cin>>length>>width;
 }
 float calculateArea(){
     return length*width;
@@ -19,10 +20,10 @@ void displayResult(){
 }
 };
 int main(){
-Student S1;
-S1.inputDimensions();
-S1.calculateArea();
-S1.calculatePerimeter();
-S1.displayResult();
+    Student S1;
+    S1.inputDimensions();
+    S1.calculateArea();
+    S1.calculatePerimeter();
+    S1.displayResult();
 return 0;
 }
