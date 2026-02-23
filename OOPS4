@@ -1,0 +1,32 @@
+// Code to store employee details and calculate annual salary using OOPS concept
+#include <iostream>
+#include <string>
+using namespace std;
+class Employee{
+    int empId;
+    string name;
+ 	double monthlySalary;
+public:
+    void inputDetails() {
+        cout << "Enter the Employee's Name: ";
+        getline(cin, name);
+        cout << "Enter Employee ID: ";
+        cin >> empId;
+        cout << "Enter Monthly Salary: ";
+        cin >> monthlySalary;}
+    double calculateAnnualSalary() {
+        return monthlySalary * 12;
+    }
+    void displayDetails() {
+        cout << "\n    Employee Summary    " << endl;
+        cout << "Name: " << name << endl;
+        cout << "Employee ID: " << empId << endl;
+        cout << "Monthly Salary: $" << monthlySalary << endl;
+        cout << "Annual Salary: $" << calculateAnnualSalary() << endl;
+    }};
+int main() {
+    Employee E1; 
+    E1.inputDetails();
+    E1.displayDetails(); 
+    return 0;
+}
