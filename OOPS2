@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Student{
+float length;
+float width;
+public:
+void inputDimensions(){
+cout<<"Enter Length of Rectangle , Width of Rectangle"<<endl;
+cin>>length>>width;
+}
+float calculateArea(){
+    return length*width;
+}
+float calculatePerimeter(){
+    return 2*(length+width);
+}
+void displayResult(){
+    cout<<"Length of Rectangle: "<<length<<endl<<"Width oF Rectangle: "<<width<<endl<<"Area: "<<calculateArea()<<endl<<"Perimeter: "<<calculatePerimeter();
+}
+};
+int main(){
+Student S1;
+S1.inputDimensions();
+S1.calculateArea();
+S1.calculatePerimeter();
+S1.displayResult();
+return 0;
+}
