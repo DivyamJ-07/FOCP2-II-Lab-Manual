@@ -1,0 +1,32 @@
+// Code to store and display book details using OOPS concept
+#include <iostream>
+#include <string>
+using namespace std;
+class Book {
+    string title;
+    string author;
+    double price;
+public:
+    void inputDetails() {
+        cout << "Enter Book Title: ";
+        cin >>  title; 
+        cout << "Enter Author Name: ";
+        cin>> author;
+        cout << "Enter Price: ";
+        cin >> price;
+    }
+
+    void displayDetails() {
+        cout << "\n    Book Entry    " << endl;
+        cout << "Title : " << title << endl;
+        cout << "Author : " << author << endl;
+        cout << "Price : $" << price << endl;
+    }
+};
+
+int main() {
+    Book myBook;
+    myBook.inputDetails();
+    myBook.displayDetails();
+    return 0;
+}
