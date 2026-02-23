@@ -1,8 +1,8 @@
+//Code to store account details and display balance using OOPS concept
 #include <iostream>
 #include <string> 
 using namespace std;
 class BankAccount {
-private:
     string accountHolderName;
     int accountNumber;
     double balance;
